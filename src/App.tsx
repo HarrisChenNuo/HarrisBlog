@@ -9,9 +9,8 @@ function App() {
     /* 整页采用 flex 布局，Header 与 Footer 固定，Main 自动撑开滚动 */
     <div className="flex min-h-screen flex-col bg-[#080E20] text-white">
       <Header />
-
       {/* Main 区域：给 Header / Footer 预留空间后才开始滚动 */}
-      <main className="flex-1 overflow-y-auto pt-20 pb-24 z-0">
+      <main className="flex-1 overflow-y-auto pt-20 pb-24">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
