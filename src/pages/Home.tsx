@@ -8,7 +8,7 @@ export default function Home() {
   // 每次播放时间更新都会调用
   const handleTimeUpdate = () => {
     const v = videoRef.current
-    if (v && !textTriggered && v.duration - v.currentTime <= 2) {
+    if (v && !textTriggered && v.duration - v.currentTime <= 0.6) {
       setShowText(true)
       setTextTriggered(true)
     }
@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* 文字内容：提前1秒淡入 */}
       <div
-        className={`relative z-10 flex max-w-3xl flex-col items-center px-4 text-center
+        className={`relative flex max-w-3xl flex-col items-center px-4 text-center
           transition-opacity duration-1000
           ${showText ? 'opacity-100' : 'opacity-0'}`}
       >
