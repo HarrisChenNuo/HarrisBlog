@@ -12,15 +12,23 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header>
-      <div>
-        {/* Logo */}
-        <div className="bg-[#88a1ea]">Harris</div>
+    <header className="fixed inset-x-0 top-0 h-16 bg-brand-dark bg-opacity-95 backdrop-blur-md shadow">
+      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
+        {/* Logo 区 */}
+        <div className="text-2xl font-bold tracking-wide">Harris</div>
 
-        {/* 导航 */}
-        <nav>
-          {navItems.map(item => (
-            <NavLink key={item.path} to={item.path}>
+        {/* 导航区 */}
+        <nav className="flex gap-6 text-sm">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              className={({ isActive }) =>
+                `relative transition duration-150 ${
+                  isActive ? 'text-brand-accent' : 'hover:text-brand-accent'
+                }`
+              }
+            >
               {item.label}
             </NavLink>
           ))}

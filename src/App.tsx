@@ -6,14 +6,12 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <div >
-
+    /* 整页采用 flex 布局，Header 与 Footer 固定，Main 自动撑开滚动 */
+    <div className="flex min-h-screen flex-col bg-[#080E20] text-white">
       <Header />
-      {/* —— 测试行 —— */}
-      <p className="text-blue-100 text-3xl">🚀 就是我！如果你看得见这行蓝色文字，说明 Tailwind utilities 在这里生效了</p>
 
-      {/* Header 4rem + Footer 6rem = 10rem，留够内边距避免内容被遮挡 */}
-      <main>
+      {/* Main 区域：给 Header / Footer 预留空间后才开始滚动 */}
+      <main className="flex-1 overflow-y-auto pt-20 pb-24 z-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
