@@ -1,15 +1,18 @@
+// src/pages/Home.tsx
 export default function Home() {
   return (
     <section className="relative flex min-h-[calc(100vh-8rem)] items-center justify-center">
-      {/* 背景视频 / 图片——这里只放占位，实际可用 <video> 或 CSS 背景图 */}
-      <div
-        className="absolute inset-0 bg-cover bg-center "
-        style={{ backgroundImage: "url('/mountain-neon.gif')" }}
+      {/* 1. 全屏视频背景 */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/S1.mp4"    /* ← 放到 public 目录下，写相对路径 */
+        autoPlay
+        loop
+        muted
+        playsInline
       />
 
-      {/* 堆栈遮罩层, 提升文字可读性 */}
-      <div className="absolute inset-0 bg-black/50 " />
-
+      {/* 2. 文字内容：相对定位，自动盖在视频上 */}
       <div className="relative flex max-w-3xl flex-col items-center px-4 text-center">
         <h1 className="mb-6 text-4xl font-extrabold md:text-5xl">
           Welcome to Harris Blog
@@ -30,5 +33,5 @@ export default function Home() {
         </p>
       </div>
     </section>
-  );
+  )
 }
