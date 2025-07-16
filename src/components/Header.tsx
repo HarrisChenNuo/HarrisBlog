@@ -24,8 +24,7 @@ export default function Header() {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `relative transition duration-150 ${
-                  isActive ? 'text-brand-accent' : 'hover:text-brand-accent'
+                `relative transition duration-150 ${isActive ? 'text-brand-accent' : 'hover:text-brand-accent'
                 }`
               }
             >
