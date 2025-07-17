@@ -2,3 +2,7 @@
 /* 一句就能自动包含 preflight + theme + utilities */
 
 /* 你的自定义全局样式可以写在这里 */
+@theme {
+  --color-custom-gray: #b3b3b3;
+  --color-custom-white: #F5F5F5;
+}

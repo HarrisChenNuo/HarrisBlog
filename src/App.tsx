@@ -6,7 +6,7 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    <div className="flex min-h-screen flex-col bg-[#080E20] text-white">
+    <div className="flex min-h-screen flex-col bg-[#080E20] text-custom-white">
       {/* 1️⃣ fixed 头部：10vh */}
       <Header />
       {/* 2️⃣ 中间内容：70vh（flex-1 会拉伸，但我们需要把 fixed 的 30vh 空间排除）*/}
