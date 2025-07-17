@@ -20,7 +20,7 @@ export default function Header() {
           <img
             src={logo}
             alt="Harris Logo"
-            className="h-20"
+            className="h-24"
           />
         </div>
         {/* 导航区 */}
@@ -30,7 +30,9 @@ export default function Header() {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `relative transition duration-150 ${isActive ? 'text-brand-accent' : 'hover:text-brand-accent'
+                `relative px-2 py-1 rounded transition duration-300 ${isActive
+                  ? 'bg-custom-gray text-black' // 激活状态样式
+                  : 'hover:bg-custom-gray hover:text-black' // 悬停样式
                 }`
               }
             >
