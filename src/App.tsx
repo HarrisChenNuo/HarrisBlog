@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import Experience from './pages/Experience';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/experience" element={<Experience />} />
           {/* 其它路由按需添加 */}
         </Routes>
       </main>
