@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="fixed inset-x-0 bottom-0 h-20  bg-[#080E20]">
+    <footer className="fixed inset-x-0 bottom-0 h-[20vh] bg-[#080E20]">
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 text-sm">
         {/* 左侧 Logo & 社媒 */}
         <div className="flex items-center gap-4">

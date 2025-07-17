@@ -12,7 +12,7 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 h-16  bg-[#080E20] z-10">
+    <header className="fixed inset-x-0 top-0 z-10 h-[10vh] bg-[#080E20]">
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
         {/* Logo 区 */}
         <div className="text-2xl font-bold tracking-wide">Harris</div>

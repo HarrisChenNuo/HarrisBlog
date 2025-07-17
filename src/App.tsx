@@ -6,18 +6,19 @@ import Profile from './pages/Profile';
 
 function App() {
   return (
-    /* 整页采用 flex 布局，Header 与 Footer 固定，Main 自动撑开滚动 */
     <div className="flex min-h-screen flex-col bg-[#080E20] text-white">
+      {/* 1️⃣ fixed 头部：10vh */}
       <Header />
-      {/* Main 区域：给 Header / Footer 预留空间后才开始滚动 */}
-      <main className="flex-1 overflow-y-auto pt-20 pb-24">
+      {/* 2️⃣ 中间内容：70vh（flex-1 会拉伸，但我们需要把 fixed 的 30vh 空间排除）*/}
+      <main className="flex-1 overflow-y-auto pt-[10vh] pb-[20vh]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           {/* 其它路由按需添加 */}
         </Routes>
       </main>
-
+      
+      {/* 3️⃣ fixed 底部：20vh */}
       <Footer />
     </div>
   );

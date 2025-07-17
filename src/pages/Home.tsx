@@ -24,7 +24,7 @@ export default function Home() {
   }
 
   return (
-    <section className="relative flex min-h-[calc(100vh-8rem)] items-center justify-center">
+    <section className="relative flex min-h-[70vh] items-center justify-center">
       {/* 视频背景 */}
       <video
         ref={videoRef}
