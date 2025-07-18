@@ -4,7 +4,7 @@ export default function Profile() {
   return (
     // 用 min-h-[70vh] 保证内容区至少占 70vh，不会再因为 py-12 额外撑高
     <section className="flex flex-col mx-auto max-w-5xl px-6 min-h-[70vh]">
-            <hr className=" border-gray-600" />
+      <hr className=" border-gray-600" />
 
       {/* 大标题 */}
       <h2 className="mb-8 text-4xl font-bold text-custom-gray">My Profile</h2>
@@ -22,14 +22,16 @@ export default function Profile() {
         </div>
 
         {/* 右侧（跨两列） */}
-        <div className="md:col-span-2 space-y-6 text-custom-gray">
-          <h3 className="text-2xl font-bold">I Am Harris</h3>
-          <p className="text-xl font-semibold">
-            You will be pleased with my Effort and Work.
+        <div className="md:col-span-2 text-custom-gray">
+          <h3 className="text-2xl font-bold">Nuo Chen</h3>
+          <p className="text-l font-semibold">
+            From Stage to System—Always a Storyteller.
           </p>
 
-          <p>I'm Harris</p>
-          <p>XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          <p>I am a Multidisciplinary Creator and Engineer</p>
+          <p>I studied Performing Arts at the Sichuan Conservatory of Music and later earned a Master of Information Technology at the University of Auckland. My journey into tech began in primary school, when I started teaching myself programming through a Chinese language-based tool called “E-language” (易语言), which laid the foundation for my passion and logical mindset.
+
+            Bridging both the artistic and technical worlds, I bring creativity, resilience, and structure into everything I build. From directing commercial short films to developing AI-integrated cloud systems, I have hands-on experience in full-stack development, cloud deployment, and human-computer interaction research. Whether crafting characters or crafting code, I aim for clarity, consistency, and meaningful impact—with both precision and heart.</p>
 
           {/* —— 这里是新的按钮样式 —— */}
           <div className="mt-6">

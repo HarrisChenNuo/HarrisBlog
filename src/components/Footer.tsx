@@ -1,4 +1,7 @@
 import logo from '../assets/logo.png';
+import { TbBrandLinkedin } from "react-icons/tb";
+import { RxInstagramLogo } from "react-icons/rx";
+import { FaFacebookSquare } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -14,11 +17,11 @@ export default function Footer() {
           />
 
           {/* 社媒图标 */}
-          <div className="flex items-center space-x-4 text-lg">
-            <a href="#" aria-label="X / Twitter" className="hover:text-white">X</a>
-            <a href="#" aria-label="Instagram" className="hover:text-white">IG</a>
-            <a href="#" aria-label="YouTube" className="hover:text-white">YT</a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-white">IN</a>
+          <div className="flex items-center space-x-4 text-2xl">
+            {/* <a href="#" aria-label="X / Twitter" className="hover:text-white">X</a> */}
+            <a href="#" aria-label="Instagram" className="hover:text-white"><RxInstagramLogo  /></a>
+            <a href="#" aria-label="YouTube" className="hover:text-white"><FaFacebookSquare /></a>
+            <a href="#" aria-label="LinkedIn" className="hover:text-white"><TbBrandLinkedin /></a>
           </div>
         </div>
         {/* —— 右侧统计 / 链接示例 —— */}

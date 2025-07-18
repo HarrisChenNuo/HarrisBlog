@@ -1,5 +1,5 @@
 // src/pages/TDocs.tsx
-import { Info } from 'lucide-react';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
 
 interface DocItem {
   title: string;
@@ -54,7 +54,7 @@ export default function TDocs() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {docs.map((doc, idx) => (
           <div key={idx} className="flex items-start space-x-4">
-            <Info className="h-6 w-6 flex-shrink-0 text-gray-400" />
+            <AiOutlineInfoCircle  className="h-6 w-6 flex-shrink-0 text-gray-400" />
             <div>
               <h3 className="text-lg font-bold text-custom-gray">{doc.title}</h3>
               <p className="mt-1 text-custom-gray leading-relaxed">
