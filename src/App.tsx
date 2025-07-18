@@ -4,6 +4,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+import TDocsts from './pages/TDocs';
+import ODocs from './pages/ODocs';
+import Guestbook from './pages/Guestbook';
+
 
 function App() {
   return (
@@ -16,10 +21,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/tech" element={<TDocsts />} />
+          <Route path="/docs" element={<ODocs />} />
+          <Route path="/guestbook" element={<Guestbook />} />
           {/* 其它路由按需添加 */}
         </Routes>
       </main>
-      
+
       {/* 3️⃣ fixed 底部：20vh */}
       <Footer />
     </div>
